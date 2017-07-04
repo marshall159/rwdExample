@@ -1,51 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem .5rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    max-width: 60rem;
+    margin: 0 auto;
+    color: #333;
+}
+
+
 img {
     max-width: 100%;
 }
 
-@media screen and (min-width: 601px) {
+.Header {
+    text-align: center;
+    border-bottom: 8px double #f9f9f9;
+    margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
+.Strap {
+    font-size: 1rem;
+}
+
+.MoneyShot {
+    position: relative;
+}
+
+.MoneyShotImg {
+    border: 6px solid #e8cfa9;
+    border-radius: 4px;
+}
+
+.LogoWrapper {
+    display: block;
+}
+
+.ImageCaption {
+    font-size: .75rem;
+    position: absolute;
+    bottom: .5rem;
+    right: 1rem;
+}
+
+.IntroText {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.MethodWrapper li {
+    padding: .4rem 0;
+}
+
+.MethodWrapper li:after {
+    content: "✼";
+	display: block;
+	text-align: center;
+	margin: 1rem 0 .5rem 0;
+	color: #eee;
+}
+
+
+
+@media screen and (min-width: 50rem) {
+    
     body {
-        max-width: 1020px;
-        margin: 0 auto;
+		border-left: 4px solid #f9f9f9;
+		border-right: 4px solid #f9f9f9;
+		padding: 1rem 2rem;
+	}
+    
+     .IntroWrapper {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
     }
     
-    .Header {
-/*        margin: 0 auto;*/
+    .MoneyShot,
+    .IntroText {
+        display: table-cell;
+        width: 50%;
+        vertical-align: middle;
         text-align: center;
+                
     }
     
     .IntroText {
-/*        float: left;*/
-        width: 39%;
-        font-size: 2.2em;
-        font-style: italic;
-        margin-right: 0.5%;
-        font-weight: 600;
-        display: inline-block;
-        vertical-align: top
-        
-    }
-    
-    .IntroWrapper {
+        padding: .5rem;
+        font-size: 2.5rem;
+        text-align: left;
         position: relative;
     }
     
-    .MoneyShot {
-/*        float: left;*/
-        width: 60%;
-        display: inline-block;
-    }
-    
-    .ImageCaption {
-        position: absolute;
-        top: 70%;
-        left: 45%;
-    }
-    
     .Ingredients {
-        border: 1px solid yellow;
-        background-color: bisque;
+        font-size: .9rem;
         float: right;
-        margin: 1%;
-        padding: 1%;
+        padding: 1rem;
+        margin: 0 0 .5rem 1rem;
+        border-radius: 3px;
+        background-color: #ffffdf;
+        border: 2px solid #e8cfa9;        
     }
+    
+    .Ingredients h3 {
+        margin: 0;
+    } 
+    
 }
